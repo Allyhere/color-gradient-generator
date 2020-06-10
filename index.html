@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Gradiator</title>
+</head>
+<body>
+    <section id="app">
+        <div class="gradient" id="gradient"></div>
+        <div class="options">
+            <div class="option__container">
+                <div class="input__container">
+                    <label for="hue">Hue</label>
+                    <input type="range" name="hue" id="hue" min="0" max="360">
+                </div>
+                <p>Or</p>
+                <button class="option__random" id="random"><p>Random</p></button>
+            </div>
+            <div class="option__container" id="mode">
+                <h2>Color Mode</h2>
+                <div class="mode__container">
+                    <button class="mode" id="monochrome"><p>Monochrome</p></button>
+                    <button class="mode" id="analogic"><p>Analog</p></button>
+                    <button class="mode" id="triad"><p>Triad</p></button>
+                    <button class="mode" id="complement"><p>Complement</p></button>
+                </div>
+            </div>
+            <div class="option__container">
+                <code class="code" id="code" tabindex="0">
+div{
+    background-image: linear-gradient(to right , #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+}
+                </code>
+                <button class="code__copy" id="copy"><p>Copy code!</p></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
